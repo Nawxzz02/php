@@ -1,0 +1,19 @@
+<html>
+<body>
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if (isset($_POST['uname']) && isset($_POST['pwd']) && $_POST['uname'] == 
+"Nawaz" && $_POST['pwd'] == "syed") 
+{
+echo "Login Successful";}
+else
+{
+echo "Login Unsuccessful";}}
+?>
+<form action="formpost.php" method="post">
+Username:<input type="text" name="uname"><br>
+Password :<input type="password" name="pwd"><br>
+<input type="submit" value="Login">
+</form>
+</body>
+</html>
