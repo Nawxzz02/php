@@ -1,0 +1,12 @@
+<?php
+$string = readline("Enter a String "); 
+echo "Original String: $string\n";
+echo "1. Length: " . strlen($string) . "\n";
+echo "2. Uppercase: " . strtoupper($string) . "\n";
+echo "3. Lowercase: " . strtolower($string) . "\n";
+echo "4. First letter of each word to lowercase: " . lcfirst(($string)) . 
+"\n";
+echo "5. First letter of each word uppercase: " . ucwords($string) . "\n";
+echo "6. Reversed: " . strrev($string) . "\n";
+echo "7. After replacement: " . str_replace("nawaz", "syed", $string) . 
+"\n";?>
