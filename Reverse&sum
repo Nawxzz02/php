@@ -1,0 +1,6 @@
+<?php
+$n = (int)readline("Enter a number: ");
+$reversed = strrev($n);
+$sum = array_sum(str_split($n));
+echo "Reversed number: $reversed\nSum of digits: $sum\n";
+?>
