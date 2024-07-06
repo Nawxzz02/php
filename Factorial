@@ -1,0 +1,6 @@
+<?php
+$n = (int)readline("Enter a number: ");
+$f = 1;
+for ($i = 2; $i <= $n; $i++) $f *= $i;
+echo "Factorial of $n is: $f\n";
+?>
