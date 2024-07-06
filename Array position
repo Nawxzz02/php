@@ -1,0 +1,8 @@
+<?php
+$arr = [1, 2, 3, 4, 5];
+echo "Before inserting: " . implode(' ', $arr) . "\n";
+$value = (int)readline("New Value: ");
+$pos = (int)readline("Position: ");
+array_splice($arr, $pos, 0, $value);
+echo "After inserting: " . implode(' ', $arr) . "\n";
+?>
