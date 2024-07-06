@@ -1,0 +1,13 @@
+<body>
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST" && 
+!empty($_POST['input_string'])) {
+echo "You entered: " . htmlspecialchars($_POST['input_string']);
+}
+?>
+<form method="post">
+Enter a String: <input type="text" name="input_string">
+<input type="submit" value="Display">
+</form>
+</body>
+</html>
