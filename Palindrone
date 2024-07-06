@@ -1,0 +1,5 @@
+<?php
+$n = readline("Enter a number: ");
+echo $n === strrev($n) ? "$n is a palindrome.\n" : "$n is not a 
+palindrome.\n";
+?>
