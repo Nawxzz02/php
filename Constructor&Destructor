@@ -1,0 +1,20 @@
+<?php
+class Person {
+private $fname, $lname;
+public function __construct($fname, $lname) {
+$this->fname = $fname;
+$this->lname = $lname;
+echo "Initializing...\n";
+}
+public function __destruct() {
+echo "Destroying...\n";
+}
+public function showName() {
+return "Name: " . $this->fname . " " . $this->lname . "\n"; 
+}
+}
+$fname = readline("Enter first name: ");
+$lname = readline("Enter last name: ");
+$p = new Person($fname, $lname);
+echo $p->showName() . "\n";
+?>
