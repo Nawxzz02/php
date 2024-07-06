@@ -1,0 +1,7 @@
+<?php
+$a = (int)readline("Enter the first number: ");
+$b = (int)readline("Enter the second number: ");
+echo "Before swapping: a = $a, b = $b\n";
+[$a, $b] = [$b, $a];
+echo "After swapping: a = $a, b = $b\n";
+?>
