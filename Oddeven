@@ -1,0 +1,4 @@
+<?php
+$no = (int)readline("Enter an Integer: ");
+echo "The number $no is " . ($no % 2 === 0 ? "Even" : "Odd") . "\n";
+?>
