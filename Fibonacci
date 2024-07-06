@@ -1,0 +1,9 @@
+<?php
+function fibonacci($n) {
+return ($n <= 1) ? $n : fibonacci($n - 1) + fibonacci($n - 2);
+}
+$n = (int)readline("Enter the number of terms: ");
+for ($i = 0; $i < $n; $i++) {
+echo fibonacci($i) . " ";
+}
+?>
