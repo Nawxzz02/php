@@ -1,0 +1,16 @@
+<html>
+<body>
+<?php
+if (isset($_GET['name'], $_GET['email'])) 
+{
+echo "Hi ", $_GET['name'], "<br>";
+echo "Your email address is: ", $_GET['email']; 
+}
+?>
+<form action="formget.php" method="get">
+Name :<input type="text" name="name"><br>
+E-Mail :<input type="text" name="email"><br>
+<input type="submit">
+</form>
+</body>
+</html>
