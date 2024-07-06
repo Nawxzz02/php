@@ -1,0 +1,11 @@
+<?php
+$conn = mysqli_connect('localhost', 'db1', '123');
+if ($conn) {
+$sql = 'CREATE DATABASE IF NOT EXISTS mySQLDB1'; 
+echo mysqli_query($conn, $sql) ? "Database created successfully." : "Error 
+creating database: " . mysqli_error($conn);
+mysqli_close($conn); 
+} else {
+die('Could not connect: ' . mysqli_connect_error());
+}
+?>
