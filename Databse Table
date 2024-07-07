@@ -1,0 +1,26 @@
+<?php  
+$host = 'localhost';  
+$user = '';  
+$pass = '';  
+$dbname='mySQLDB2';
+
+$conn = mysqli_connect($host, $user, $pass);  
+if(! $conn )  
+  die('Could not connect: ' . mysqli_connect_error());   
+else
+  echo 'Connected successfully<br/>';  
+$sql = 'CREATE Database mySQLDB2';  
+if(mysqli_query( $conn,$sql))  
+echo "Database created successfully.";  
+else
+echo "Sorry, database creation failed ".mysqli_error($conn); 
+$conn = mysqli_connect($host, $user, $pass,$dbname);  
+$sql = "create table employee(eid int,ename varchar(20), salary int)";    
+if(mysqli_query($conn, $sql))
+ echo "<br/>Employee Table created successfully";  
+else 
+echo "Could not create table: ". mysqli_error($conn);   
+
+mysqli_close($conn);  
+?>
+
